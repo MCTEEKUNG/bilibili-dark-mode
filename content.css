@@ -1,0 +1,382 @@
+html.night-mode .bstar-video-card__cover-mask-text {
+  display: inline-block !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  flex: 0 1 auto !important;
+  box-sizing: border-box;
+  white-space: nowrap;
+  padding: 2px 7px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fff !important;
+  text-shadow: 0 1px 3px #000;
+}
+
+html.night-mode .bstar-video-card__cover-wrap:hover .bstar-video-card__cover-mask-text {
+  color: #7ddcff !important;
+}
+
+html.night-mode .section-title__text {
+  color: #fff !important;
+}
+
+/* Day schedule tabs (ฮอตฮิต, ศ., ส., อา., จ., อ., พ., พฤ.) */
+html.night-mode .scroll-container__item {
+  color: rgba(255, 255, 255, 0.55) !important;
+  font-weight: 400;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+html.night-mode .scroll-container__item:hover {
+  color: #7ddcff !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Active tab */
+html.night-mode .scroll-container__item--active {
+  background: rgba(6, 182, 242, 0.22) !important;
+  color: #7ddcff !important;
+  font-weight: 500;
+}
+
+/* Today (วันปัจจุบัน / ตัวหนา) - เด่นชัด แยกออกจากวันธรรมดา */
+html.night-mode .scroll-container__item--bold {
+  position: relative;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: 0 0 0.6px currentColor;
+  background: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: inset 0 0 0 1px rgba(6, 182, 242, 0.45);
+}
+
+/* จุดมาร์กเกอร์สีฟ้าใต้ตัวหนังสือสำหรับ วันปัจจุบัน */
+html.night-mode .scroll-container__item--bold::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #06b6f2;
+}
+
+/* วันปัจจุบันเมื่อถูกคลิกเลือก (Active) */
+html.night-mode .scroll-container__item--bold.scroll-container__item--active {
+  background: rgba(6, 182, 242, 0.25) !important;
+  color: #7ddcff !important;
+  box-shadow: inset 0 0 0 1px rgba(6, 182, 242, 0.75);
+}
+
+html.night-mode .scroll-container__item--bold.scroll-container__item--active::after {
+  background: #7ddcff;
+}
+
+/* Trending page header & titles */
+html.night-mode .trending-container__title-wrap,
+html.night-mode .trending-container__title {
+  color: #fff !important;
+}
+
+html.night-mode .trending-container__subtitle {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* Trending page main tabs (อนิเมะ, ละครสั้น) */
+html.night-mode .trending-tab__pc-item {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+html.night-mode .trending-tab__pc-item:hover {
+  color: #7ddcff !important;
+}
+
+html.night-mode .trending-tab__pc-item.active {
+  color: #fff !important;
+}
+
+html.night-mode .trending-tab__pc-item.active:before {
+  background: #06b6f2 !important;
+}
+
+html.night-mode .trending-tab__mobile-tab {
+  background-color: transparent !important;
+}
+
+/* Trending page category filter pills (โดยรวม, Premium, เลือดร้อน, ...) */
+html.night-mode .trending-card__tab-item {
+  background: #242424 !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+html.night-mode .trending-card__tab-item:hover {
+  background: #303030 !important;
+  color: #7ddcff !important;
+}
+
+html.night-mode .trending-card__tab-item--active {
+  background: rgba(6, 182, 242, 0.22) !important;
+  color: #7ddcff !important;
+  font-weight: 500;
+}
+
+html.night-mode .trending-card__subtitle {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Trending card bottom & rank containers */
+html.night-mode .trending-card-section .card-bottom,
+html.night-mode .trending-card-section .card-bottom[class*="rank-bg-"] {
+  background: #222222 !important;
+}
+
+html.night-mode .trending-card-section .card-bottom.rank-bg-1 {
+  background: #2d2516 !important;
+}
+
+html.night-mode .trending-card-section .card-bottom.rank-bg-2 {
+  background: #1b2630 !important;
+}
+
+html.night-mode .trending-card-section .card-bottom.rank-bg-3 {
+  background: #2e2219 !important;
+}
+
+html.night-mode .trending-card-section .card-bottom .card-title,
+html.night-mode .rank-title-container .card-title,
+html.night-mode .card-title {
+  color: #fff !important;
+}
+
+html.night-mode .trending-card-section .card-bottom .card-title:hover,
+html.night-mode .rank-title-container .card-title:hover,
+html.night-mode .card-title:hover {
+  color: #7ddcff !important;
+}
+
+html.night-mode .trending-card-section .card-bottom .card-time {
+  color: #b8b8b8 !important;
+}
+
+html.night-mode .rank-num-desktop:not(.rank-1):not(.rank-2):not(.rank-3) text,
+html.night-mode [class*="rank-num"]:not(.rank-1):not(.rank-2):not(.rank-3) text,
+html.night-mode .rank-num-desktop svg text[fill*="0, 0, 0"],
+html.night-mode .rank-num-desktop svg text[fill*="0,0,0"] {
+  fill: rgba(255, 255, 255, 0.45) !important;
+}
+
+
+html.night-mode .layout.layout-grey {
+  background: #191919 !important;
+}
+
+html.night-mode .layout__body--play,
+html.night-mode .layout__body--play .bstar-meta,
+html.night-mode .layout__body--play .video-player__right,
+html.night-mode .layout__body--play .ep-section,
+html.night-mode .layout__body--play .series {
+  color: #fff;
+}
+
+html.night-mode .layout__body--play .section-title,
+html.night-mode .layout__body--play .bstar-meta__title,
+html.night-mode .layout__body--play .bstar-meta__ogv-title,
+html.night-mode .layout__body--play .bstar-video-card__title,
+html.night-mode .layout__body--play .bstar-video-card__title-text {
+  color: #fff !important;
+}
+
+html.night-mode .layout__body--play .bstar-meta__alias,
+html.night-mode .layout__body--play .bstar-meta__area,
+html.night-mode .layout__body--play .bstar-meta__create-time,
+html.night-mode .layout__body--play .bstar-meta__desc,
+html.night-mode .layout__body--play .bstar-meta__info,
+html.night-mode .layout__body--play .bstar-meta__origin-name,
+html.night-mode .layout__body--play .bstar-meta__tips,
+html.night-mode .layout__body--play .bstar-meta__type,
+html.night-mode .layout__body--play .bstar-video-card__desc {
+  color: #b8b8b8 !important;
+}
+
+html.night-mode .layout__body--play .ep-item,
+html.night-mode .layout__body--play .series__more-btn {
+  background: #242424 !important;
+  color: #e5e5e5 !important;
+}
+
+html.night-mode .layout__body--play .ep-item:hover,
+html.night-mode .layout__body--play .series__more-btn:hover {
+  background: #303030 !important;
+  color: #7ddcff !important;
+}
+
+html.night-mode .layout__body--play .ep-item--active,
+html.night-mode .layout__body--play .section-bar__item.active {
+  background: rgba(6, 182, 242, 0.2) !important;
+  color: #7ddcff !important;
+}
+
+html.night-mode .layout__body--play .section-bar__item,
+html.night-mode .layout__body--play .ep-section-arrow {
+  color: #e5e5e5 !important;
+}
+
+/* BiliBili Tabs (bstar-tab, filters, episode tabs, etc.) */
+html.night-mode .bstar-tab__item,
+html.night-mode .layout__body--play .bstar-tab__item {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+html.night-mode .bstar-tab__item:hover,
+html.night-mode .layout__body--play .bstar-tab__item:hover {
+  color: #7ddcff !important;
+  background-color: rgba(6, 182, 242, 0.12) !important;
+  border-radius: 4px;
+}
+
+html.night-mode .bstar-tab__item.active,
+html.night-mode .layout__body--play .bstar-tab__item.active {
+  background: rgba(6, 182, 242, 0.22) !important;
+  color: #7ddcff !important;
+  border-radius: 4px;
+}
+
+html.night-mode .bstar-tab--normalLine .bstar-tab__item,
+html.night-mode .bstar-tab--largeLine .bstar-tab__item {
+  color: rgba(255, 255, 255, 0.6) !important;
+  background: transparent !important;
+}
+
+html.night-mode .bstar-tab--normalLine .bstar-tab__item.active,
+html.night-mode .bstar-tab--largeLine .bstar-tab__item.active {
+  color: #fff !important;
+  background: transparent !important;
+}
+
+html.night-mode .bstar-tab--normalLine .bstar-tab__item.active:after,
+html.night-mode .bstar-tab--largeLine .bstar-tab__item.active:after {
+  background-color: #06b6f2 !important;
+}
+
+/* Category & Search Filter Section (.filters) */
+html.night-mode .filters,
+html.night-mode .filters:not(.filters--mobile) {
+  background: #242424 !important;
+  border-radius: 8px;
+}
+
+html.night-mode .filters__label {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+html.night-mode .filters__label--mobile {
+  color: #fff !important;
+}
+
+html.night-mode .category-filters-skeleton,
+html.night-mode .category-tab-skeleton__item {
+  background: #242424 !important;
+}
+
+html.night-mode .selected-result__text {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+html.night-mode .selected-result--mobile {
+  background-color: #191919 !important;
+}
+
+/* Cookies PopUp Banner (.bstar-cookie-info) */
+html.night-mode .bstar-cookie-info {
+  background: #242424 !important;
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.7) !important;
+  border-top: 1px solid #383838 !important;
+}
+
+html.night-mode .bstar-cookie-info__title {
+  color: #fff !important;
+}
+
+html.night-mode .bstar-cookie-info__desc {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+html.night-mode .bstar-cookie-info__link {
+  color: #7ddcff !important;
+}
+
+html.night-mode .bstar-cookie-info__link:hover {
+  color: #a8e8ff !important;
+  text-decoration: underline;
+}
+
+html.night-mode .bstar-cookie-info .bstar-cookie-info__confirm,
+html.night-mode .bstar-cookie-info .bstar-button {
+  background: #06b6f2 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+html.night-mode .bstar-cookie-info .bstar-cookie-info__confirm:hover,
+html.night-mode .bstar-cookie-info .bstar-button:hover {
+  background: #05a3d9 !important;
+}
+
+
+html.night-mode .interactive {
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  background: #242424 !important;
+  color: #fff;
+}
+
+html.night-mode .interactive__btn {
+  border-radius: 6px;
+  background: #303030 !important;
+  color: #e5e5e5 !important;
+}
+
+html.night-mode .interactive__btn::before,
+html.night-mode .bstar-danmaku__icon {
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+}
+
+html.night-mode .interactive__btn:hover,
+html.night-mode .interactive__btn.active {
+  background: rgba(6, 182, 242, 0.16) !important;
+  color: #7ddcff !important;
+}
+
+html.night-mode .interactive__btn:hover::before,
+html.night-mode .interactive__btn.active::before {
+  filter: none;
+  opacity: 1;
+}
+
+html.night-mode .bstar-danmaku-bar__main {
+  border: 1px solid #383838;
+  background: #191919 !important;
+  color: #fff !important;
+}
+
+html.night-mode .bstar-danmaku-bar__main > input {
+  color: #fff !important;
+}
+
+html.night-mode .bstar-danmaku-bar__main > input::placeholder {
+  color: #999 !important;
+}
+
+html.night-mode .bstar-danmaku-bar__button {
+  background: #06b6f2 !important;
+  color: #fff !important;
+}
+
+html.night-mode .bstar-danmaku-bar__button:disabled {
+  background: #333 !important;
+  color: #777 !important;
+}
